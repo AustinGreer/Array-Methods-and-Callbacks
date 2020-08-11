@@ -13,6 +13,19 @@ console.log('its working');
 (e) Winner of 2014 world cup final */
 
 
+fifaData.forEach(function(item){
+    if (item.Year === 2014 && item.Stage === "Final") {
+        console.log(`The Home Team was: ${item["Home Team Name"]}`);
+        console.log(`The Away Team was: ${item["Away Team Name"]}`);
+        console.log(`The Home Team Scored ${item["Home Team Goals"]} point.`);
+        console.log(`The Away Team scored ${item["Away Team Goals"]} points.`);
+        console.log(`The winner was: ${item["Win conditions"]}`);
+    }
+})
+
+
+
+
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
 function getFinals(/* code here */) {
